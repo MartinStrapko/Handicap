@@ -44,5 +44,5 @@ Material:
     - _Hue: 194.49
     - _smoothness: 0
     m_Colors:
-    - _Color: {r: 0.30870998, g: 0.4457693, b: 0.7610062, a: 0}
+    - _Color: {r: 0.45570982, g: 0.5485585, b: 0.7607843, a: 0}
   m_BuildTextureStacks: []
