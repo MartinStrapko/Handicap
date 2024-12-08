@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SphereRotation.cs" />
+    <Compile Include="Assets\KeypadColorSetter.cs" />
     <Compile Include="Assets\SmoothRotationFollower.cs" />
   </ItemGroup>
   <ItemGroup>
