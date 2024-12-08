@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3783683942525213719
+--- !u!114 &-9173741874261687635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Test
+  m_Name: event:/FX/Spawn/Spawn_down
   m_EditorClassIdentifier: 
-  Path: event:/Test
+  Path: event:/FX/Spawn/Spawn_down
   Guid:
-    Data1: 119383675
-    Data2: 1302982669
-    Data3: -2016085876
-    Data4: 1803011604
+    Data1: -179302491
+    Data2: 1102470623
+    Data3: -856044127
+    Data4: -96896670
   Banks:
   - {fileID: 2179688352708810311}
   IsStream: 0
@@ -26,7 +26,519 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 574
+  Length: 916
+--- !u!114 &-8466114105300938648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/fx_color 5
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/fx_color 5
+  Guid:
+    Data1: 754899202
+    Data2: 1179842278
+    Data3: -1215393876
+    Data4: 1193735311
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1486
+--- !u!114 &-8040450285890524899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_INGAME old/MI_INSTRUMENTS
+  m_EditorClassIdentifier: 
+  Name: MI_INSTRUMENTS
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 3743862455
+    data2: 3556328348
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - ALL
+  - DRUMS
+  - BASS
+  - LEAD
+  Exists: 1
+--- !u!114 &-7431461530992448487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move/Movement
+  m_EditorClassIdentifier: 
+  Name: Movement
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2305838893
+    data2: 2056855544
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7346817536346937702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_INGAME old/MI_TRANSITION
+  m_EditorClassIdentifier: 
+  Name: MI_TRANSITION
+  StudioPath: 
+  Min: 0
+  Max: 8
+  Default: 0
+  ID:
+    data1: 1953810296
+    data2: 2689080177
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-6980374460693626805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/FX_Win
+  m_EditorClassIdentifier: 
+  Path: event:/FX/FX_Win
+  Guid:
+    Data1: -1913161222
+    Data2: 1079650914
+    Data3: 1194968226
+    Data4: 1672423476
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3374
+--- !u!114 &-6210647495634546968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/FX_StartGame
+  m_EditorClassIdentifier: 
+  Path: event:/FX/FX_StartGame
+  Guid:
+    Data1: -485374230
+    Data2: 1119937459
+    Data3: -207593843
+    Data4: -1264025016
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2374
+--- !u!114 &-5182657765741140368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/RPS/fx_enemy_hand
+  m_EditorClassIdentifier: 
+  Path: event:/FX/RPS/fx_enemy_hand
+  Guid:
+    Data1: 1650663188
+    Data2: 1229700512
+    Data3: -1351339382
+    Data4: 1292560326
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40
+--- !u!114 &-4177181827340917565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUSIC_INGAME old
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/MUSIC_INGAME old
+  Guid:
+    Data1: 271159696
+    Data2: 1111997638
+    Data3: -1507461241
+    Data4: 2011170723
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7346817536346937702}
+  - {fileID: -8040450285890524899}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 359000
+--- !u!114 &-3691320594336568758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/FX_StationDone
+  m_EditorClassIdentifier: 
+  Path: event:/FX/FX_StationDone
+  Guid:
+    Data1: 1111187445
+    Data2: 1257780728
+    Data3: 2104362412
+    Data4: -1907258178
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1999
+--- !u!114 &-2304735314313673213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/fx_color 7
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/fx_color 7
+  Guid:
+    Data1: 1984480936
+    Data2: 1091918313
+    Data3: 618752906
+    Data4: -1073357799
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 368
+--- !u!114 &-2165213334752096459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Spawn/Spawn_up
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Spawn/Spawn_up
+  Guid:
+    Data1: -1335673424
+    Data2: 1213883131
+    Data3: -1044248446
+    Data4: 388935162
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1541
+--- !u!114 &-2074792867439636357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/amb_main
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/amb_main
+  Guid:
+    Data1: -1403745827
+    Data2: 1156898687
+    Data3: -857589115
+    Data4: 1249987813
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 26000
+--- !u!114 &-1972400226366787159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/fx_color 8
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/fx_color 8
+  Guid:
+    Data1: 1646690065
+    Data2: 1126712652
+    Data3: 1461942673
+    Data4: 1260859257
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 368
+--- !u!114 &-1643715707909986404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Planets/ui_planet_pick
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Planets/ui_planet_pick
+  Guid:
+    Data1: -1533210776
+    Data2: 1170895334
+    Data3: 1864883125
+    Data4: 2038220548
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1712
+--- !u!114 &-1304189679108234263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/fx_color 1
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/fx_color 1
+  Guid:
+    Data1: -1088357662
+    Data2: 1217511207
+    Data3: 474312120
+    Data4: -1819115724
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1410
+--- !u!114 &-1158966055654409472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/fx_color 2
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/fx_color 2
+  Guid:
+    Data1: 1846352388
+    Data2: 1124774256
+    Data3: 1090283192
+    Data4: 120464539
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1486
+--- !u!114 &-1003557906549498445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Move
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Move
+  Guid:
+    Data1: -1311826833
+    Data2: 1259630580
+    Data3: -1450296927
+    Data4: -635857910
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7431461530992448487}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9125
+--- !u!114 &-469954029160501714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MI_INSTRUMENTS
+  m_EditorClassIdentifier: 
+  Name: MI_INSTRUMENTS
+  StudioPath: parameter:/MI_INSTRUMENTS
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 3743862455
+    data2: 3556328348
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - ALL
+  - DRUMS
+  - BASS
+  - LEAD
+  Exists: 1
+--- !u!114 &-415472256891646103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/amb_secondary
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/amb_secondary
+  Guid:
+    Data1: -90611377
+    Data2: 1132146434
+    Data3: 1364939393
+    Data4: 1682814937
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,14 +555,96 @@ MonoBehaviour:
   - {fileID: 9110829959998867911}
   - {fileID: 2179688352708810311}
   EditorEvents:
-  - {fileID: -3783683942525213719}
-  EditorParameters: []
+  - {fileID: -8466114105300938648}
+  - {fileID: -1158966055654409472}
+  - {fileID: -1972400226366787159}
+  - {fileID: -5182657765741140368}
+  - {fileID: 570145236128176627}
+  - {fileID: 3181650264453872779}
+  - {fileID: 6444229906654471924}
+  - {fileID: -415472256891646103}
+  - {fileID: 3758116873154065541}
+  - {fileID: 6221748979357025198}
+  - {fileID: -1643715707909986404}
+  - {fileID: -1003557906549498445}
+  - {fileID: 6669052401775995126}
+  - {fileID: 2481550085862819527}
+  - {fileID: 8453772334320454627}
+  - {fileID: -4177181827340917565}
+  - {fileID: 3541134394383457898}
+  - {fileID: -9173741874261687635}
+  - {fileID: -2304735314313673213}
+  - {fileID: -2165213334752096459}
+  - {fileID: 1225740380596838011}
+  - {fileID: -2074792867439636357}
+  - {fileID: -1304189679108234263}
+  - {fileID: 7339372761663799234}
+  - {fileID: -6210647495634546968}
+  - {fileID: -3691320594336568758}
+  - {fileID: -6980374460693626805}
+  EditorParameters:
+  - {fileID: -469954029160501714}
+  - {fileID: 6960637118554761537}
   MasterBanks:
   - {fileID: 2179688352708810311}
   StringsBanks:
   - {fileID: 9110829959998867911}
-  cacheTime: 638692601371527478
+  cacheTime: 638692785981881826
   cacheVersion: 131621
+--- !u!114 &570145236128176627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Planets/ui_planet_place
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Planets/ui_planet_place
+  Guid:
+    Data1: -698958034
+    Data2: 1222379411
+    Data3: -118589561
+    Data4: 2091337360
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2520
+--- !u!114 &1225740380596838011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/FX_NextStation
+  m_EditorClassIdentifier: 
+  Path: event:/FX/FX_NextStation
+  Guid:
+    Data1: 1580339139
+    Data2: 1252293947
+    Data3: -2002621564
+    Data4: 84940594
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 580
 --- !u!114 &2179688352708810311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,8 +660,329 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638692601371447481
+  lastModified: 638692785981861830
   FileSizes: []
+  Exists: 1
+--- !u!114 &2481550085862819527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMB/amb_rotor
+  m_EditorClassIdentifier: 
+  Path: event:/AMB/amb_rotor
+  Guid:
+    Data1: -472404605
+    Data2: 1218593136
+    Data3: 953820093
+    Data4: 1734738254
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 64000
+--- !u!114 &3181650264453872779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/fx_color 4
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/fx_color 4
+  Guid:
+    Data1: -1911428816
+    Data2: 1120038411
+    Data3: -870799429
+    Data4: 61734242
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1486
+--- !u!114 &3541134394383457898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/FX_Loss
+  m_EditorClassIdentifier: 
+  Path: event:/FX/FX_Loss
+  Guid:
+    Data1: -1983946342
+    Data2: 1241576566
+    Data3: 1291552941
+    Data4: 70843813
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2360
+--- !u!114 &3758116873154065541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/fx_color 9
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/fx_color 9
+  Guid:
+    Data1: 1957403732
+    Data2: 1125684630
+    Data3: 393346952
+    Data4: 2065347471
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 368
+--- !u!114 &6221748979357025198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/fx_color 6
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/fx_color 6
+  Guid:
+    Data1: -1045857700
+    Data2: 1258278293
+    Data3: -881901143
+    Data4: 716747989
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1486
+--- !u!114 &6444229906654471924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/ui_button_sel
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/ui_button_sel
+  Guid:
+    Data1: -594096307
+    Data2: 1159111012
+    Data3: -2010421617
+    Data4: -960837727
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 125
+--- !u!114 &6669052401775995126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/ui_button_desel
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/ui_button_desel
+  Guid:
+    Data1: 442104705
+    Data2: 1103308679
+    Data3: -884054910
+    Data4: 1494684741
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 354
+--- !u!114 &6960637118554761537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MI_TRANSITION
+  m_EditorClassIdentifier: 
+  Name: MI_TRANSITION
+  StudioPath: parameter:/MI_TRANSITION
+  Min: 0
+  Max: 8
+  Default: 0
+  ID:
+    data1: 1953810296
+    data2: 2689080177
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &7339372761663799234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/MUSIC_INGAME
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/MUSIC_INGAME
+  Guid:
+    Data1: -1864125465
+    Data2: 1247353292
+    Data3: 846525088
+    Data4: -1547163988
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8558378247115519582}
+  - {fileID: 8895488470813608187}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 85085
+--- !u!114 &8453772334320454627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Color match/fx_color 3
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Color match/fx_color 3
+  Guid:
+    Data1: -1378817913
+    Data2: 1287177119
+    Data3: -453921900
+    Data4: 1157202841
+  Banks:
+  - {fileID: 2179688352708810311}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1486
+--- !u!114 &8558378247115519582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_INGAME/MI_TRANSITION
+  m_EditorClassIdentifier: 
+  Name: MI_TRANSITION
+  StudioPath: 
+  Min: 0
+  Max: 8
+  Default: 0
+  ID:
+    data1: 1953810296
+    data2: 2689080177
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8895488470813608187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_INGAME/MI_INSTRUMENTS
+  m_EditorClassIdentifier: 
+  Name: MI_INSTRUMENTS
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 3743862455
+    data2: 3556328348
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - ALL
+  - DRUMS
+  - BASS
+  - LEAD
   Exists: 1
 --- !u!114 &9110829959998867911
 MonoBehaviour:
@@ -84,8 +999,8 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638692601371527478
+  lastModified: 638692785981881826
   FileSizes:
   - Name: 
-    Value: 754
+    Value: 2134
   Exists: 1
