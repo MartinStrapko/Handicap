@@ -992,16 +992,12 @@
       <HintPath>Library\ScriptAssemblies\Meta.XR.Editor.UserInterface.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="VoiceSDK.Telemetry.Runtime">
-      <HintPath>Library\ScriptAssemblies\VoiceSDK.Telemetry.Runtime.dll</HintPath>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Oculus.Interaction.Samples.Editor">
@@ -1010,6 +1006,10 @@
     </Reference>
     <Reference Include="Meta.Voice.NLayer">
       <HintPath>Library\ScriptAssemblies\Meta.Voice.NLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VoiceSDK.Telemetry.Runtime">
+      <HintPath>Library\ScriptAssemblies\VoiceSDK.Telemetry.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
@@ -1268,10 +1268,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Oculus.Platform">
-      <HintPath>Library\ScriptAssemblies\Oculus.Platform.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1308,12 +1304,16 @@
       <HintPath>Library\ScriptAssemblies\Oculus.Interaction.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="NewAssembly">
-      <HintPath>Library\ScriptAssemblies\NewAssembly.dll</HintPath>
+    <Reference Include="Oculus.Platform">
+      <HintPath>Library\ScriptAssemblies\Oculus.Platform.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NewAssembly">
+      <HintPath>Library\ScriptAssemblies\NewAssembly.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
@@ -1364,12 +1364,12 @@
       <HintPath>Library\ScriptAssemblies\VoiceSDK.Runtime.Composer.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Oculus.Haptics.Editor">
-      <HintPath>Library\ScriptAssemblies\Oculus.Haptics.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Oculus.Haptics.Editor">
+      <HintPath>Library\ScriptAssemblies\Oculus.Haptics.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Meta.Wit.Dictation.Editor">

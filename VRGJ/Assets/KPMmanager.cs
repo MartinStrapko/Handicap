@@ -15,6 +15,8 @@ public class KPNmanager : MonoBehaviour
     public TextMeshProUGUI lossText;
     public TextMeshProUGUI drawText;
 
+    public GameObject[] semaphoreSignals; // Array of sphere GameObjects
+
     public float initialSpeed = 1f;
     public float secondSpeed = 0.5f;
     public float thirdSpeed = 0.25f;
@@ -34,18 +36,19 @@ public class KPNmanager : MonoBehaviour
 
     void Update()
     {
-        // Check if thumbs-up gesture is detected
+        // Restart game if thumbs-up gesture is detected
         if (!isPlaying && (playerGesture == "ThumbsUpLeft" || playerGesture == "ThumbsUpRight"))
         {
-            Debug.Log("Thumbs-Up Gesture Detected: Restarting Game");
             RestartGame();
         }
     }
 
     void InitializeGame()
     {
-        DeactivateAllGestureMeshes();
+        ResetSignalLights();
         ResetResultText();
+        DeactivateAllGestureMeshes();
+
         currentSpeed = initialSpeed;
         gestureCount = 0;
         isPlaying = true;
@@ -54,7 +57,6 @@ public class KPNmanager : MonoBehaviour
 
     void RestartGame()
     {
-        Debug.Log("RestartGame method triggered.");
         if (rotationCoroutine != null)
         {
             StopCoroutine(rotationCoroutine);
@@ -66,8 +68,10 @@ public class KPNmanager : MonoBehaviour
         gestureCount = 0;
         isPlaying = true;
 
+        ResetSignalLights();
         ResetResultText();
         DeactivateAllGestureMeshes();
+
         rotationCoroutine = StartCoroutine(RotateHandMeshes());
     }
 
@@ -93,12 +97,13 @@ public class KPNmanager : MonoBehaviour
 
     public void UpdatePlayerGesture(string gesture)
     {
-        Debug.Log("Player Gesture Detected in Script: " + gesture);
         playerGesture = gesture;
 
         if (!isPlaying) return;
 
         gestureCount++;
+
+        UpdateSignalLights(gestureCount - 1); // Update lights progressively
 
         if (gestureCount == 1)
         {
@@ -137,6 +142,26 @@ public class KPNmanager : MonoBehaviour
         else
         {
             lossText.gameObject.SetActive(true);
+        }
+    }
+
+    void ResetSignalLights()
+    {
+        foreach (var signal in semaphoreSignals)
+        {
+            var material = signal.GetComponent<Renderer>().material;
+            material.SetColor("_EmissionColor", Color.black); // Turn off glow
+            material.DisableKeyword("_EMISSION");
+        }
+    }
+
+    void UpdateSignalLights(int signalIndex)
+    {
+        if (signalIndex >= 0 && signalIndex < semaphoreSignals.Length)
+        {
+            var material = semaphoreSignals[signalIndex].GetComponent<Renderer>().material;
+            material.SetColor("_EmissionColor", material.color * 2f); // Glow in their original color
+            material.EnableKeyword("_EMISSION");
         }
     }
 
