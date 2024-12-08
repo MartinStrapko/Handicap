@@ -1,25 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using System.Collections;
 
 public class SphereShellOpener : MonoBehaviour
 {
     [SerializeField]
-    private Transform[] shellParts; // »asti obalu (naprÌklad jednotlivÈ Ëasti gule)
+    private Transform[] shellParts; // »asti obalu
 
     [SerializeField]
-    private Vector3 targetRotation = new Vector3(0f, 0f, 20f); // Cieæov· rot·cia pre vöetky Ëasti
+    private float targetRotationY = 0f; // Absol˙tna cieæov· hodnota rot·cie po osi Y
+
+    [SerializeField]
+    private int rotationDirection = 1; // Smer rot·cie: 1 pre pozitÌvny smer, -1 pre negatÌvny smer
 
     [SerializeField]
     private float rotationSpeed = 50f; // R˝chlosù otv·rania (stupne za sekundu)
 
     [SerializeField]
-    private float delayBetweenParts = 0.5f; // Oneskorenie medzi otv·ranÌm jednotliv˝ch ËastÌ (v sekund·ch)
+    private float delayBetweenParts = 0.5f; // Oneskorenie medzi zaËiatkami otv·rania jednotliv˝ch ËastÌ
 
     private void Start()
     {
-        OpenShell(); // SpustÌ otv·ranie hneÔ po ötarte
+        OpenShell(); // SpustÌ proces otv·rania
     }
 
     private void OpenShell()
@@ -29,25 +33,42 @@ public class SphereShellOpener : MonoBehaviour
 
     private IEnumerator OpenShellSequence()
     {
-        foreach (var part in shellParts)
+        for (int i = 0; i < shellParts.Length; i++)
         {
-            yield return RotatePartSmoothly(part);
+            StartCoroutine(RotatePartSmoothly(shellParts[i]));
             yield return new WaitForSeconds(delayBetweenParts);
         }
     }
 
     private IEnumerator RotatePartSmoothly(Transform part)
     {
-        Quaternion initialRotation = part.localRotation;
-        Quaternion finalRotation = Quaternion.Euler(targetRotation);
+        float currentRotationY = NormalizeAngle(part.localEulerAngles.y); // Normalizujeme aktu·lny uhol
+        float targetRotation = targetRotationY;
 
-        while (Quaternion.Angle(part.localRotation, finalRotation) > 0.1f)
+        // UpravÌme cieæov˙ hodnotu podæa smeru
+        if (rotationDirection > 0 && currentRotationY > targetRotation)
         {
-            part.localRotation = Quaternion.RotateTowards(part.localRotation, finalRotation, rotationSpeed * Time.deltaTime);
+            targetRotation += 360f; // PozitÌvny smer
+        }
+        else if (rotationDirection < 0 && currentRotationY < targetRotation)
+        {
+            currentRotationY -= 360f; // NegatÌvny smer
+        }
+
+        while (Mathf.Abs(currentRotationY - targetRotation) > 0.1f)
+        {
+            float step = rotationSpeed * Time.deltaTime * rotationDirection;
+            currentRotationY = Mathf.MoveTowards(currentRotationY, targetRotation, Mathf.Abs(step));
+            part.localEulerAngles = new Vector3(part.localEulerAngles.x, currentRotationY, part.localEulerAngles.z);
             yield return null;
         }
 
-        // ZaruËÌme presnÈ nastavenie na cieæov˙ rot·ciu
-        part.localRotation = finalRotation;
+        // Presne nastavÌme cieæov˝ uhol
+        part.localEulerAngles = new Vector3(part.localEulerAngles.x, targetRotation, part.localEulerAngles.z);
+    }
+
+    private float NormalizeAngle(float angle)
+    {
+        return (angle % 360 + 360) % 360; // Normalizuje uhol na rozsah 0∞ - 360∞
     }
 }
